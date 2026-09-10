@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>漢字→ひらがな変換</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>漢字→ひらがな</h1>
+      <p class="desc">
+        このタブのページ上の漢字をひらがなに変換します。<br />
+        すでにあるひらがな・カタカナ・数字・英字はそのままです。
+      </p>
+      <div class="row">
+        <span id="statusLabel" class="status off">オフ</span>
+        <button id="toggleBtn" type="button" class="toggle" aria-pressed="false">
+          オンにする
+        </button>
+      </div>
+      <p id="message" class="message" hidden></p>
+      <p class="hint">初回は辞書の読み込みに数秒かかることがあります。</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
